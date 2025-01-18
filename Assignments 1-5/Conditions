@@ -1,0 +1,9 @@
+response = input("Is today a good day? Yes/No").lower()
+if response == 'yes':
+    for _ in range (10):
+        print ("That is wonderful! I hope your day continues to prosper")
+elif response == 'no':
+    for _ in range(10):
+        print ("I am sorry to hear that, I hope your day gets better ;)")
+else:
+    print ("Please ask authorizer to ask you the question again.")
