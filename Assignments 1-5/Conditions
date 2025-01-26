@@ -1,9 +1,24 @@
-response = input("Is today a good day? Yes/No").lower()
-if response == 'yes':
+"""
+This script asks the user if today is a good day and includes
+a function to print through a iteration x - 10
+"""
+
+def send_message(): 
+    """
+    Prints a  positive message and says that is wonderful! I hope your day continues to
+    prosper 10 times 
+    """
     for _ in range (10):
         print ("That is wonderful! I hope your day continues to prosper")
+
+
+ # Ask user if today is good yes/no       
+response = input("Is today a good day? Yes/No").lower()
+
+if response == 'yes':
+    # Call function to print
+    send_message()
 elif response == 'no':
-    for _ in range(10):
         print ("I am sorry to hear that, I hope your day gets better ;)")
 else:
     print ("Please ask authorizer to ask you the question again.")
